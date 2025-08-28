@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ 
+.table-container {
+  width: 100%;
+  overflow-x: auto;  /* Enables horizontal scrolling on small screens */
+}
+
+.data-grid {
+  min-width: 600px; /* Prevents columns from collapsing too much */
+}
+ 
+@media (max-width: 768px) {
+  .data-grid {
+    font-size: 0.8rem; /* smaller text for mobile */
+  }
+
+  .data-grid .MuiDataGrid-columnHeaders {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .data-grid {
+    font-size: 0.7rem;
+  }
+}
+
